@@ -1,0 +1,20 @@
+# Dependcies for the build and run
+[package]
+name = "student_rsa_tool"
+version = "0.1.0"
+edition = "2021" # https://doc.rust-lang.org/cargo/reference/manifest.html#the-edition-field
+license-file = "LICENSE"
+
+
+# General dependencies
+[dependencies]
+num-bigint-dig = "0.8.1"
+num-traits = "0.2.15"
+num-primes = "0.3.0"
+rand_core = { version = "0.6.4", default-features = false }
+serde = { version = "1.0.147", features = ["derive"] }
+serde_json = "1.0.87"
+crossterm = "0.25.0"
+
+[dev-dependencies]
+rustfmt = "0.10.0"
